@@ -3,62 +3,68 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
+/* todo el body */
+body {
+    background-image: url(./recursos/fondo-marmol.jpg);
+    scroll-behavior: smooth;
+}
 
+/* header y menu */
 header{
-width: 100%;
-border-radius: 0 0 30px 30px;
-background-color: #eabba186;
-display: flex;
-padding: 15px 20px;
-justify-content: center;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    background-color: #eabba186;
+    display: flex;
+    padding: 15px 20px;
+    justify-content: center;
 }
 
 nav {
-display: flex;
-align-items: center;
-padding: .5rem;
-width: 100%;
-transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    width: 100%;
+    transition: all 0.5s;
 }
 
 header img{
-border-radius: 50%;
-max-width: 100px;
-height: auto;
-margin: 10px;
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    margin: 10px;
 }
 
 header nav ul{
-display: flex;
-list-style: none;
-padding: 0;
-margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-background-color: #F9D4BF;
-border-radius: 6px;
-width: 9rem;
-margin:  0 10px;
-text-align: center;
+    background-color: #F9D4BF;
+    border-radius: 6px;
+    width: 9rem;
+    margin:  0 10px;
+    text-align: center;
 }
 
 nav ul li:hover{
-transform: scale(1.1);
-box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(255, 201, 201, 0.774);
+    transform: scale(1.1);
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(255, 201, 201, 0.774);
 }
 
 nav ul li:active{
-transform: scale(1);
-box-shadow: none;
+    transform: scale(1);
+    box-shadow: none;
 }
 
 nav ul li a {
-display: block; 
-text-decoration: none;
-text-transform: uppercase;
-color: white;
-padding: .4rem;
+    display: block; 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: .4rem;
 }
 
 .checkbox{
@@ -74,48 +80,43 @@ padding: .4rem;
     cursor: pointer;
 }
 #menu {
-display: none;
+    display: none;
 }
-
-body {
-background-image: url(./recursos/fondo-marmol.jpg);
-scroll-behavior: smooth;
-}
-
+/*Tdoas las secciones*/
 .main-contenedor{
     width: 75vw;
     margin: 30px auto;
 }
-
+/*Titulos y parrafos*/
 #titulo-1 {
-text-align: center;
-color: #EABAA1;
-font-family: 'Corinthia', cursive;
-font-size: 110px;
-margin-bottom: -35px;
+    text-align: center;
+    color: #EABAA1;
+    font-family: 'Corinthia', cursive;
+    font-size: 110px;
+    margin-bottom: -35px;
 }
 
 #titulo-2 {
-text-align: center;
-color: #9E806E;
-font-family:'Playfair Display', serif;
-font-size: 50px;
+    text-align: center;
+    color: #9E806E;
+    font-family:'Playfair Display', serif;
+    font-size: 50px;
 }
 
 .contenedor-de-titulo{
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #titulo-3 {
-background-color: #F9D4BF;
-background-clip: text;
-color: #9E806E;
-font-size: 25px;
-border-radius: 15px;
-padding: 8px;
-margin-bottom: 20px;
-text-align: center;
+    background-color: #F9D4BF;
+    background-clip: text;
+    color: #9E806E;
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -132,57 +133,61 @@ p {
     font-family:'Playfair Display', serif;
 }
 
+/*Secciones*/
 .contenedor{
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedor .seccion{
-justify-content: center;
-text-align: center;
-padding: 10px 40px;
-margin-top: 40px;
-background-color: #f0decb9c;
-border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 40px;
+    margin-top: 40px;
+    background-color: #f0decb9c;
+    border-radius: 15px;
 }
-
+/*animación de la foto*/
 .contenedor .seccion .foto img{
-border-radius: 50%;
+    border-radius: 50%;
 }
 .contenedor .seccion .foto{
-height: 220px;
+    height: 220px;
+    display: inline-block;
+    margin-right: 215px;
 }
 .contenedor .seccion .foto div{
-position: absolute;
-backface-visibility: hidden;
-transition: all 1s;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all 1s;
 }
 .contenedor .seccion .foto .frente{
-transform: perspective(500px) rotateY(0deg);
+    transform: perspective(500px) rotateY(0deg);
 }
 .contenedor .seccion .foto .atras{
     transform: perspective(500px) rotateY(180deg);
 }
 .contenedor .seccion .foto:hover .frente{
     transform: perspective(500px) rotateY(180deg);
-    }
+}
 .contenedor .seccion .foto:hover .atras{
     transform: perspective(500px) rotateY(360deg);
-    }
+}
+/*sección de datos con botones y formularios*/
 .contenedor .seccion ul{
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 .contenedor .seccion ul li {
-display: inline-block;
+    display: inline-block;
 }
 
 .contenedor .seccion ul li a{
-font-size: 45px;
-padding: 10px 15px;
-display: block;
-transition: all .2s ease-in-out;
-color: rgba(250, 137, 137, 0.774);
+    font-size: 45px;
+    padding: 10px 15px;
+    display: block;
+    transition: all .2s ease-in-out;
+    color: rgba(250, 137, 137, 0.774);
 }
 
 .contenedor .seccion ul li a:hover{
@@ -191,76 +196,80 @@ color: rgba(250, 137, 137, 0.774);
 }
 
 .contenedor .seccion form{
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contenedor .seccion form .texto {
-width: 70%;
-padding: 15px 15px;
-border: solid #eabba1c0;
-margin-bottom: 20px;
-border-radius: 30px;
-outline: 0px;
+    width: 70%;
+    padding: 15px 15px;
+    border: solid #eabba1c0;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    outline: 0px;
 }
 .contenedor .seccion form .texto-largo{
-min-height:140px;
-max-height: 150px;
-width: 70%;
-padding: 15px 15px;
-border: solid #eabba1c0;
-margin-bottom: 20px;
-border-radius: 30px;
-outline: 0px;
-overflow: auto;
+    min-height:140px;
+    max-height: 150px;
+    width: 70%;
+    padding: 15px 15px;
+    border: solid #eabba1c0;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    outline: 0px;
+    overflow: auto;
 }
 .contenedor .seccion form .boton{
-padding: 15px;
-margin: 15px;
-border: none;
-outline: 0px;
-background: #eabba1c0;
-color: white;
-font-size: 15px;
-border-radius: 33px;
-cursor: pointer;
+    padding: 15px;
+    margin: 15px;
+    border: none;
+    outline: 0px;
+    background: #eabba1c0;
+    color: white;
+    font-size: 15px;
+    border-radius: 33px;
+    cursor: pointer;
 }
 .contenedor .seccion form .boton:hover{
     transform: scale(1.1);
     box-shadow: #f4b18c;
 }
-
+/* adaptación a pantallas */
 @media screen and (max-width: 819px){
 header{
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    }
 header img{
-max-width: 100px;
-height: auto;
-margin: 10px;
-}
-
+    max-width: 100px;
+    height: auto;
+    margin: 1px;
+    }
 header .checkbox{
-display: block;
-}
+    display: block;
+    }
 #menu{
-display: block;
-}
-nav{
-display: flex;
-position: absolute;
-width: 70%;
-margin-right: -70%;
-transition: all 0.5s;
-}
+    display: none;
+    }
+header nav{
+    display: none;
+    width: 70%;    
+    }
 nav ul{
-flex-direction: column;
-}
+    flex-direction: column;
+    }
 #menu:checked ~ nav {
-margin-right: 0px;
+    display: block;
+    }
+
+.main-contenedor{
+    width: 100%;
+    }
+#titulo-1{
+font-size: 7rem;
 }
 }
 @media screen and (max-width: 1080px){
@@ -275,4 +284,4 @@ margin-right: 0px;
     .main-contenedor .contenedor .seccion{
     width: 100%;
     }
-    }
+}
